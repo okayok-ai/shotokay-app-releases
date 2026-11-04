@@ -31,6 +31,10 @@
 Dockerfile text eol=lf
 Makefile text eol=lf
 
+# cmd.exe requires CRLF. PowerShell stays LF above.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
 # Leave binaries alone
 *.png binary
 *.jpg binary
